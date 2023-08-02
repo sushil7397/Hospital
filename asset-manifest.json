@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Hospital/static/css/main.b7a2f20f.css",
+    "main.js": "/Hospital/static/js/main.4493c0a6.js",
+    "static/media/dotimg.png": "/Hospital/static/media/dotimg.66dc0451af571b9c2237.png",
+    "static/media/insta.png": "/Hospital/static/media/insta.263cdf8b69b5f5cfc6b7.png",
+    "static/media/Home.png": "/Hospital/static/media/Home.81ba449f9a1547b1df9c.png",
+    "static/media/Hospital.png": "/Hospital/static/media/Hospital.7475fecb07dac01ffd29.png",
+    "static/media/face.png": "/Hospital/static/media/face.dfa6bae2ef6b40d04ce9.png",
+    "static/media/Hospital1.jpeg": "/Hospital/static/media/Hospital1.fbe0459c262be38e4644.jpeg",
+    "static/media/admin.png": "/Hospital/static/media/admin.382d1509c88de336c371.png",
+    "static/media/Anton-Regular.ttf": "/Hospital/static/media/Anton-Regular.db746a1872bfcd092bf8.ttf",
+    "static/media/youtube.png": "/Hospital/static/media/youtube.ed80a938ddcd63f17595.png",
+    "static/media/tweeter.png": "/Hospital/static/media/tweeter.3eb12aead2a93f9fb273.png",
+    "static/media/Hospital2.jpeg": "/Hospital/static/media/Hospital2.a883ad39bdfc6dd79cb7.jpeg",
+    "static/media/LexendDeca-Regular.ttf": "/Hospital/static/media/LexendDeca-Regular.a466ffa37cde22ad287b.ttf",
+    "static/media/weblogo.png": "/Hospital/static/media/weblogo.9b440446d2f85557fd01.png",
+    "static/media/weblogo1.png": "/Hospital/static/media/weblogo1.902967c35905695577ba.png",
+    "static/media/Hospital3.jpeg": "/Hospital/static/media/Hospital3.7cbf3430a6144dbce637.jpeg",
+    "static/media/weblogo2.png": "/Hospital/static/media/weblogo2.14d9fdb68d17a48971d2.png",
+    "static/media/Abel-Regular.ttf": "/Hospital/static/media/Abel-Regular.3843f456cf56d275baf6.ttf",
+    "static/media/patient.jpg": "/Hospital/static/media/patient.c308e45310a862e6e18e.jpg",
+    "static/media/overview.jpg": "/Hospital/static/media/overview.7575ed5eb37128d5357d.jpg",
+    "static/media/comma.png": "/Hospital/static/media/comma.98d070a2c36b86b05b57.png",
+    "index.html": "/Hospital/index.html",
+    "main.b7a2f20f.css.map": "/Hospital/static/css/main.b7a2f20f.css.map",
+    "main.4493c0a6.js.map": "/Hospital/static/js/main.4493c0a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7a2f20f.css",
+    "static/js/main.4493c0a6.js"
+  ]
+}
