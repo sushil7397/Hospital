@@ -20,10 +20,37 @@ import weblogo1 from './static/media/weblogo1.png'
 import weblogo2 from './static/media/weblogo2.png'
 import youtube from './static/media/youtube.png'
 
+import { useState } from 'react';
 
  
 
 function App() {
+  const [activeIndex, setActiveIndex] = useState(2); // Set the default active index to 2 (index of the initially expanded item)
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const faqData = [
+    {
+      question: "How do I know the clinic I'm searching is Verified?",
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.',
+    },
+    {
+      question: 'I can travel alone so can some family member or friend of mine accompany me?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.',
+    },
+    {
+      question: 'Can I see my doctor before I decide and what about my post recovery?',
+      answer: 'Yes, pre and post treatment consultation can be done. You can speak to the doctor at the most appropriate time (before you decide to travel) to boost your confidence. The team at Mediretreats will also help you with arranging the OPDS after the surgeries.'
+    },
+    {
+      question:'How do I share my reports and medical cases with the clinic of my choice?',
+      answer:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.',
+    },
+    ];
+  
   return (
     <>
   <header>
@@ -381,77 +408,25 @@ function App() {
             </ul>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
+
           <div className="container1">
             <h2>Treatment FAQs</h2>
             <div className="accordion">
-              <div className="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span className="accordion-title">
-                    How do I know the clinic I'm searching is Verified?
-                  </span>
-                  <span className="icon" aria-hidden="true" />
-                </button>
-                <div className="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false">
-                  <span className="accordion-title">
-                    I can travel alone so can some family member or friend of
-                    mine accompany me?
-                  </span>
-                  <span className="icon" aria-hidden="true" />
-                </button>
-                <div className="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <button id="accordion-button-3" aria-expanded="true">
-                  <span className="accordion-title">
-                    Can I see my doctor before I decide and what about my post
-                    recovery?
-                  </span>
-                  <span className="icon" aria-hidden="true" />
-                </button>
-                <div className="accordion-content">
-                  <p>
-                    Yes, pre and post treatment consultation can be done. You
-                    can speak to the doctor at the most appropriate time (before
-                    you decide to travel) to boost your confidence. The team at
-                    Mediretreats will also help you with arranging the OPD'S
-                    after the surgeries.
-                  </p>
-                </div>
-              </div>
-              <div className="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false">
-                  <span className="accordion-title">
-                    How do I share my reports and medical cases with the clinic
-                    of my choice?
-                  </span>
-                  <span className="icon" aria-hidden="true" />
-                </button>
-                <div className="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
+            {faqData.map((item, index) => (
+          <div className="accordion-item" key={index}>
+            <button
+              id={`accordion-button-${index}`}
+              aria-expanded={activeIndex === index ? 'true' : 'false'}
+              onClick={() => toggleAccordion(index)}
+            >
+              <span className="accordion-title">{item.question}</span>
+              <span className="icon" aria-hidden="true"></span>
+            </button>
+            <div className={`accordion-content ${activeIndex === index ? 'open' : ''}`}>
+              <p>{item.answer}</p>
+            </div>
+          </div>
+        ))}
             </div>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
