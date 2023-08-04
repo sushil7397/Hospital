@@ -127,7 +127,7 @@ function App() {
             <a href="#">Blog</a>
           </li>
           <li className="nav-link">
-            <a href="#">Request and Quote</a>
+            <a>Request and Quote</a>
           </li>
         </ul>
       </div>
