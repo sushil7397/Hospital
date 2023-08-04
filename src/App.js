@@ -112,16 +112,16 @@ function App() {
             <a href="#">About Us</a>
           </li>
           <li className="nav-link">
-            <a href="#">Treatment &nbsp; +</a>
+            <a href="#Treatment">Treatment &nbsp; +</a>
           </li>
           <li className="nav-link">
-            <a href="#">Destinations &nbsp; +</a>
+            <a href="#Destinations">Destinations &nbsp; +</a>
           </li>
           <li className="nav-link">
-            <a href="#">Hospitals</a>
+            <a href="#Hospital">Hospitals</a>
           </li>
           <li className="nav-link">
-            <a href="#">FaQs</a>
+            <a href="#FaQs">FaQs</a>
           </li>
           <li className="nav-link">
             <a href="#">Blog</a>
@@ -153,11 +153,11 @@ function App() {
             <i style={{ color: "#D5052F" }} className="fa fa-chevron-right" />
           </div>
           <div className="ricon">
-            Treatment{" "}
+            <a href='#Treatment'></a> Treatment{" "}
             <i style={{ color: "#D5052F" }} className="fa fa-chevron-right" />
           </div>
           <div className="ricon">
-            Orthopaedics{" "}
+          <a style={{ color: "white" }} href='#Orthopaedics'> Orthopaedics{" "} </a>
             <i style={{ color: "#D5052F" }} className="fa fa-chevron-right" />
           </div>
           <div className="ricon">Knee Replacement</div>
@@ -174,20 +174,20 @@ function App() {
     </section>
     <section>
       <div className="mainsection">
-        <div className="sectiontitle">Overview</div>
-        <div className="sectiontitle">Eligibilty</div>
-        <div className="sectiontitle">Preparation</div>
-        <div className="sectiontitle">About Treatment</div>
-        <div className="sectiontitle">Post-Treatment Care</div>
-        <div className="sectiontitle">Recovery Tips</div>
-        <div className="sectiontitle">FaQs</div>
-        <div className="sectiontitle">Patient Stories</div>
+        <div className="sectiontitle"><a href='#Overview' style={{color:'black'}} >Overview</a></div>
+        <div className="sectiontitle"><a href='#Eligibilty' style={{color:'black'}} >Eligibilty</a></div>
+        <div className="sectiontitle"><a href='#Preparation' style={{color:'black'}} >Preparation</a></div>
+        <div className="sectiontitle"><a href='#Treatment' style={{color:'black'}} >About Treatment</a></div>
+        <div className="sectiontitle"><a href='#Post-Treatment' style={{color:'black'}} >Post-Treatment Care</a></div>
+        <div className="sectiontitle"><a href='#Recovery' style={{color:'black'}} >Recovery Tips</a></div>
+        <div className="sectiontitle"> <a href='#FaQs' style={{color:'black'}} >FaQs</a></div>
+        <div className="sectiontitle"><a href='#Patientstory' style={{color:'black'}} >Patient Stories</a></div>
       </div>
     </section>
     <section>
       <div className="maincontent">
         <div className="overview">
-          <div className="maintitle">Treatment Overview</div>
+          <div className="maintitle" id='Overview'>Treatment Overview</div>
           <div className="OverviewDesc">
             <div className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -218,8 +218,8 @@ function App() {
     <section className="container">
       <div className="site-content">
         <div className="sitecontentmain">
-          <div className="post-content">
-            <div className="post-title">
+          <div className="post-content" id='Eligibilty'>
+            <div className="post-title" >
               <a href=""> Eligibilty For Treatment</a>
             </div>
             <div className="contentDesc">
@@ -256,7 +256,7 @@ function App() {
             </ul>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
-          <div className="post-content">
+          <div className="post-content" id='Preparation'>
             <div className="post-title">
               <a href=""> Preparation Before Treatment</a>
             </div>
@@ -294,8 +294,8 @@ function App() {
             </ul>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
-          <div className="post-content">
-            <div className="post-title">
+          <div className="post-content" id='Treatment'>
+            <div className="post-title" >
               <a href=""> About Treatment</a>
             </div>
             <div className="contentDesc">
@@ -332,7 +332,7 @@ function App() {
             </ul>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
-          <div className="post-content">
+          <div className="post-content" id='Post-Treatment'>
             <div className="post-title">
               <a href=""> Post Treatment and Care Treatment</a>
             </div>
@@ -370,7 +370,7 @@ function App() {
             </ul>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
-          <div className="post-content">
+          <div className="post-content" id='Recovery'>
             <div className="post-title">
               <a href=""> Treatment Recovery Tips</a>
             </div>
@@ -409,7 +409,7 @@ function App() {
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
 
-          <div className="container1">
+          <div className="container1" id='FaQs'>
             <h2>Treatment FAQs</h2>
             <div className="accordion">
             {faqData.map((item, index) => (
@@ -430,7 +430,7 @@ function App() {
             </div>
             <hr className="dashed1" style={{ marginTop: "2rem" }} />
           </div>
-          <div className="Patientstory">
+          <div className="Patientstory" id='Patientstory'>
             <div className="storytitle"> Patient Stories and Videos</div>
             <div className="blog">
               <div className="container2">
@@ -553,7 +553,7 @@ function App() {
       </div>
     </section>
     <section>
-      <div className="Doctor">
+      <div className="Doctor" id='Orthopaedics'>
         <h3 className="dh3">Doctors</h3>
         <div className="dhead">
           <h2 className="dh2">Top Orthopaedics</h2>{" "}
@@ -679,7 +679,7 @@ function App() {
       </div>
     </section>
     <section>
-      <div className="Doctor">
+      <div className="Doctor" id='Hospital'>
         <h3 className="dh3">Hospitals</h3>
         <div className="dhead">
           <h2 className="dh2">Recommended</h2>{" "}
@@ -860,9 +860,9 @@ function App() {
         <h2 style={{ fontSize: "1.3rem" }} className="fh2">
           Important Links
         </h2>
-        <div>- Home</div>
+        <div><a style={{ color: "white" }} href='/'>- Home</a></div>
         <div>- About us</div>
-        <div>- FaQs</div>
+        <div><a style={{ color: "white" }} href='#FaQs'>- FaQs </a></div> 
         <div>- Blog</div>
         <div>- Contact us</div>
       </div>
@@ -903,7 +903,7 @@ function App() {
           deleniti accusantium laboriosam.
         </div>
       </div>
-      <div className="tour">
+      <div className="tour" id='Destinations'>
         <h2 style={{ fontSize: "1.3rem" }} className="fh2">
           Medical Tourism Destinations{" "}
         </h2>
