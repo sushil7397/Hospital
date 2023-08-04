@@ -106,7 +106,7 @@ function App() {
       <div>
         <ul className="nav-items">
           <li className="nav-link">
-            <a href="/">Home</a>
+            <a href="#">Home</a>
           </li>
           <li className="nav-link">
             <a href="#">About Us</a>
@@ -860,7 +860,7 @@ function App() {
         <h2 style={{ fontSize: "1.3rem" }} className="fh2">
           Important Links
         </h2>
-        <div><a style={{ color: "white" }} href='/'>- Home</a></div>
+        <div><a style={{ color: "white" }} href='#'>- Home</a></div>
         <div>- About us</div>
         <div><a style={{ color: "white" }} href='#FaQs'>- FaQs </a></div> 
         <div>- Blog</div>
