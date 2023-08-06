@@ -933,10 +933,10 @@ function App() {
       >
         <div className="followicon">
           <h2>Follow us on</h2>
-          <img src={face} alt="" srcSet="" />
-          <img src={tweeter} alt="" srcSet="" />
-          <img src={insta} alt="" srcSet="" />
-          <img src={youtube} alt="" srcSet="" />
+          <img style={{ paddingRight: "10px" }} src={face} alt="" srcSet="" />
+          <img style={{ paddingRight: "10px" }} src={tweeter} alt="" srcSet="" />
+          <img style={{ paddingRight: "10px" }} src={insta} alt="" srcSet="" />
+          <img style={{ paddingRight: "10px" }} src={youtube} alt="" srcSet="" />
         </div>
         <p style={{ paddingTop: "3rem", fontSize: "1.1rem" }}>
           Customer Services
